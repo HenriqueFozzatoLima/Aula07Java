@@ -37,8 +37,10 @@ public class Aluno {
         double nota[] = new double[5];
         double media[] = new double[5];
         String result = "";
-        for (int i = 0; i < m.length; i++) {
+        String resultado = "";
+        int codigo = 0;
 
+        for (int i = 0; i < m.length; i++) {
             nota[i] = Double.parseDouble(JOptionPane.showInputDialog("Nota de " + m[i]));
             result += m[i] + ": " + nota[i] + "\n";
 
@@ -47,33 +49,48 @@ public class Aluno {
         JOptionPane.showMessageDialog(null, result);
         JOptionPane.showMessageDialog(null, "Sua média é: " + (nota[0] + nota[1] + nota[2] + nota[3] + nota[4]) / 5);
 
+        codigo = Integer.parseInt(JOptionPane.showInputDialog("Digite o número da prova que você deseja ver: "));
+        result = m[codigo] + ": " + nota[codigo];
+        JOptionPane.showMessageDialog(null, result);
+
     }
 
-    public void atividade3() {
-        String disc[] = {"Matemática", "Português", "Física", "História", "Geografia"};
-        double nota[] = {9, 8, 4.5, 7, 6};
-   
-
-        System.out.println("Digite um número de 0 a 4:");
-        int num = ler.nextInt();
-        if (num == 0) {
-            System.out.println("Disciplina: " + disc[0] + "\n" + "Nota: " + nota[0]);
-
-        } else if (num == 1) {
-            System.out.println("Disciplina: " + disc[1] + "\n" + "Nota: " + nota[1]);
-        } else if (num == 2) {
-            System.out.println("Disciplina: " + disc[2] + "\n" + "Nota: " + nota[2]);
-        } else if (num == 3) {
-            System.out.println("Disciplina: " + disc[3] + "\n" + "Nota: " + nota[3]);
-        } else if (num == 4) {
-            System.out.println("Disciplina: " + disc[4] + "\n" + "Nota: " + nota[4]);
-        } else {
-            System.out.println("Número inválido. Por favor, escolha um número de 0 a 4.");
-        }
-
-//            
-    }
-
+//    public void atividade3() {
+//        String disc[] = {"Matemática", "Português", "Física", "História", "Geografia"};
+//        double nota[] = {9, 8, 4.5, 7, 6};
+//        
+//
+//        System.out.println("Digite um número de 0 a 4:");
+//        int num = ler.nextInt();
+//        if (num == 0) {
+//            System.out.println("Disciplina: " + disc[0] + "\n" + "Nota: " + nota[0]);
+//
+//        } else if (num == 1) {
+//            System.out.println("Disciplina: " + disc[1] + "\n" + "Nota: " + nota[1]);
+//        } else if (num == 2) {
+//            System.out.println("Disciplina: " + disc[2] + "\n" + "Nota: " + nota[2]);
+//        } else if (num == 3) {
+//            System.out.println("Disciplina: " + disc[3] + "\n" + "Nota: " + nota[3]);
+//        } else if (num == 4) {
+//            System.out.println("Disciplina: " + disc[4] + "\n" + "Nota: " + nota[4]);
+//        } else {
+//            System.out.println("Número inválido. Por favor, escolha um número de 0 a 4.");
+//        }
+//
+////            
+//    }
+//
+//    public void atividade03() {
+//        String disci[] = {"Matemática", "Português", "Física", "História", "Geografia"};
+//        double nota[] = {9, 8, 4.5, 7, 6};
+//        String result = "";
+//        int codigo = 0;
+//
+////        for (int i = 0; i < nota.length; i++) {
+////            JOptionPane.showMessageDialog(null, disci[i] + ": " + nota[i]);
+////        }
+//        codigo = Integer.parseInt(JOptionPane.showInputDialog("Digite um código: "));
+//        result = disci[codigo] + ": " + nota[codigo];
+//        JOptionPane.showMessageDialog(null, result);
+//    }
 }
-
-

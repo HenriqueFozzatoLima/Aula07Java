@@ -26,11 +26,14 @@ public class Principal {
 //        
 //        aluno.cadastrarAluno();
 //        
-//         Atividade 1 e 2
+//         Atividade 1 e 2 e 3
 
-//        aluno.atividade1();
+        aluno.atividade1();
+
 //        Atividade 3
-        aluno.atividade3();
+
+        //aluno.atividade3();
+        //aluno.atividade03();
 
     }
 }
